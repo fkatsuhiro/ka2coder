@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap-past.css">
+  <link rel="stylesheet" href="css/calc.css">
+  <title>電卓機能</title>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="calculator calculator-win card" id="content">
+      <input type="text" id="display" class="form-control mb-2" oninput="handleInput(event)">
+      <div class="buttons">
+        <button class="btn btn-danger" onclick="clearDisplay()">AC</button>
+        <button class="btn btn-warning" onclick="calculate('sqrt')">√</button>
+        <button class="btn btn-warning" onclick="calculate('square')">x²</button>
+        <button class="btn btn-info" onclick="appendToDisplay('/')"></button>
+        <button class="btn btn-light" onclick="appendToDisplay('7')">7</button>
+        <button class="btn btn-light" onclick="appendToDisplay('8')">8</button>
+        <button class="btn btn-light" onclick="appendToDisplay('9')">9</button>
+        <button class="btn btn-info" onclick="appendToDisplay('/')"> &#0247; </button>
+        <button class="btn btn-light" onclick="appendToDisplay('4')">4</button>
+        <button class="btn btn-light" onclick="appendToDisplay('5')">5</button>
+        <button class="btn btn-light" onclick="appendToDisplay('6')">6</button>
+        <button class="btn btn-info" onclick="appendToDisplay('*')"> &#0215; </button>
+        <button class="btn btn-light" onclick="appendToDisplay('1')">1</button>
+        <button class="btn btn-light" onclick="appendToDisplay('2')">2</button>
+        <button class="btn btn-light" onclick="appendToDisplay('3')">3</button>
+        <button class="btn btn-info" onclick="appendToDisplay('-')">-</button>
+        <button class="btn btn-light" onclick="appendToDisplay('0')">0</button>
+        <button class="btn btn-light" onclick="appendToDisplay('.')">.</button>
+        <button class="btn btn-success" onclick="calculateResult()">=</button>
+        <button class="btn btn-info" onclick="appendToDisplay('+')">+</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/jQuery.js"></script>
+  <script src="js/popper-past.js"></script>
+  <script src="js/bootstrap-past.js"></script>
+  <script src="js/calc.js"></script>
+</body>
+</html>

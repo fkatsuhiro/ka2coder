@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>study</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--pc版のヘッダー-->
+    <div class="pc-nav">
+        <!-- ヘッダーのコード -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light hline width-100"
+            style="position: fixed; z-index:100;">
+            <div class="container">
+                <!-- ロゴ -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/icon.jpg" alt="Your Logo" class="circle-icon">
+                </a>
+                <!-- ロゴ横のテキスト -->
+                <span class="logo-font">
+                    Ka2Coder
+                </span>
+                <!-- 右側のリンク -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="career.html">Career</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="works.html">Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="study.html">Study</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <!-- ヘッダー終わり -->
+    </div>
+
+    <!--mobile版のヘッダーコード-->
+    <div class="mobile-nav">
+        <!-- ヘッダーのコード -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light hline width-100"
+            style="position: fixed; z-index:100;">
+            <div class="container">
+
+                <!-- ロゴ -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/icon.jpg" alt="Your Logo" class="circle-icon">
+                </a>
+
+                <!-- ロゴ横のテキスト -->
+                <span class="logo-font">
+                    Ka2Coder
+                </span>
+                <!--menu-select-->
+                <div class="nav nav-tabs">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">menu</button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="index.html">Home</a></li>
+                        <li><a class="dropdown-item" href="career.html">Career</a></li>
+                        <li><a class="dropdown-item" href="works.html">Works</a></li>
+                        <li><a class="dropdown-item" href="study.html">Study</a></li>
+                    </ul>
+                </div>
+                <!--end-->
+            </div>
+        </nav>
+    </div>
+    <!--mobile header 終了-->
+    <div class="page">
+        <!--Study-->
+        <div class="under-section">
+            <p class="midasi" style="font-size: 1.7rem; font-family: 'Ubuntu Mono 700';">非常に重い原子核の安定な構造に関するの研究</p>
+            <div style="font-size: 1.3rem;font-weight:bold">概要</div>
+            <div style="padding: 1rem 0;">中性子星のような質量数1000程度の粒子は近年構造に関して2つの見解が存在します。1つはバブル型の構造で、もう一方はトーラス型の構造をとるという二つの見解が存在します。
+                そこで、私はこの構造の議論に関して様々な制限を設けて簡易化し、数値的に議論できるのではないかと考え、取り組むことにしました。本研究では液滴模型を考えています。
+            </div>
+            <div style="font-size: 1.3rem;font-weight:bold; font-family: 'Ubuntu Mono 700';">質量公式とは</div>
+            <div style="padding-top: 1rem;">液滴模型に関して、原子核の結合エネルギーを表す簡単な公式として考案されたもの。その結合エネルギーは体積項・表面項・非対称項・クーロン項の4つの項で表されます。</div>
+            <div>この質量公式では暗黙に一様球を仮定しています。また、この原子核の半径はr<sub>0</sub>A<sup>1/3</sup>であらわされます。また、r<sub>0</sub> ~ 1.24で扱われることが多いです。</div>
+            <div style="font-weight: bold; padding: 1rem 0">体積項 : <span class="stydy-font">-b<sub>V</sub>A</span> 表面項 : <span class="stydy-font">b<sub>S</sub>A<sup>2/3</sup></span> 非対称項 : <span class="stydy-font">b<sub>A</sub>( N - Z )<sup>2</sup>/ A </span> クーロン項 : <span class="stydy-font">b<sub>C</sub>Z<sup>2</sup> / A<sup>1 / 3</sup></span></div>
+            <div>また、このモデルの一様球の仮定を取り除いた際に、次のように表記することができる。</div>
+            <!--一様球の仮定を取り除いた標識を挿入-->
+            <!--end-->
+            <div style="padding-bottom: 1em;">この標識からバブル型、トーラス型に関して計算を行っていく。</div>
+            <div style="font-size: 1.3rem;font-weight:bold; font-family: 'Ubuntu Mono 700';">モンテカルロ積分とは</div>
+            <div>モンテカルロ積分とは、モンテカルロ法に基づいた積分を行います。モンテカルロ積分では区分求積のような考え方を用います。</div>
+            <div style="font-weight: bold;">使用言語 : C言語</div>
+        </div>
+        <!--Study end-->
+    </div>
+    <!--本体end-->
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
