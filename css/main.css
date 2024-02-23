@@ -42,8 +42,9 @@
     margin: 10px auto 10px;
 }
 
-.stydy-font{
+.study-font{
     font-family: "Century Gothic",sans-serif;
+    font-size: 2em;
 }
 
 /*セクションごとの余白*/
@@ -102,7 +103,7 @@
 span{
     font-size: 1.3rem;
     font-weight: bold;
-    color: #a9a9a9;
+    /*color: #a9a9a9;*/
 }
 
 
