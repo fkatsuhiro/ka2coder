@@ -1,0 +1,294 @@
+@font-face {
+    font-family: 'Ubuntu Mono italic 400';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(font/UbuntuMono-Italic.ttf) format('woff2');
+}
+@font-face {
+    font-family: 'Ubuntu Mono italic 700';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url(font/UbuntuMono-BoldItalic.ttf) format('woff2');
+}
+
+@font-face {
+    font-family: 'Ubuntu Mono 400';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(font/UbuntuMono-Regular.ttf) format('woff2');
+}
+
+@font-face {
+    font-family: 'Ubuntu Mono 700';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(font/UbuntuMono-Bold.ttf) format('woff2');
+}
+
+/*ページ全体の背景の色*/
+.background {
+    background-color: #e6e6e6;
+}
+
+/*見出しの文字サイズ*/
+.midasi {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px auto 10px;
+}
+
+.study-font{
+    font-family: "Century Gothic",sans-serif;
+    font-size: 2em;
+}
+
+/*セクションごとの余白*/
+.under-section {
+    padding-bottom: 10px;
+}
+
+.page {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 130px;
+    padding-bottom: 3rem;
+}
+
+.circle-icon {
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #333;
+}
+
+/*作品一覧用css*/
+.works-com{
+    border-radius: 15px;
+    background-color: #fff;
+    color: #333;
+}
+
+/*worksのコンポーネントごとのcss*/
+.name-comp{
+    margin: 10px auto 0 auto;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/*ナビゲーションの下の水平線*/
+.hline {
+    border-bottom: 2px gray;
+}
+
+.logo-font {
+    font-family: cursive, serif, sans-serif;
+    font-size: 1.5em;
+}
+
+/*文字サイズ指定*/
+
+.font-nomal {
+    font-size: 1em;
+}
+
+.font-large {
+    font-size: 1.5em;
+}
+
+/*spanタグ指定*/
+span{
+    font-size: 1.3rem;
+    font-weight: bold;
+    /*color: #a9a9a9;*/
+}
+
+
+/*ヘッダー用スペース*/
+.header-space {
+    padding-top: 70px;
+}
+
+/*トップ画像*/
+.top-img {
+    object-fit: cover;
+    width: 100%;
+}
+
+/*太字用css*/
+.bold {
+    font-weight: bold;
+}
+
+/*挿入画像用のサイズ制限*/
+.all-img {
+    width: 100%;
+}
+
+/*画面幅指定用css*/
+.width-100 {
+    width: 100%;
+}
+
+.width-80 {
+    width: 80%;
+}
+
+.width-aboutus {
+    width: 80%;
+}
+
+.item-margin {
+    margin: 0 auto;
+}
+
+.padding-bottom {
+    padding-bottom: 1em;
+}
+
+.padding-top {
+    padding-top: 1em;
+}
+
+.item-center {
+    text-align: center;
+}
+
+/*ページ最下部*/
+.page-down {
+    padding-bottom: 5em;
+}
+
+/*フッターデザイン*/
+.footer {
+    background-color: #888888;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/*========= レイアウトのためのCSS ===============*/
+
+body {
+    background: #eee;
+}
+
+h2,
+p {
+    text-align: center;
+    padding: 20px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: #333;
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+@media screen and (max-width:1100px) {
+    .area-qa {
+        padding: 1em;
+        height: 19em;
+        background-color: #fff;
+    }
+}
+
+@media screen and (max-width:915px) {
+    .area-qa {
+        padding: 1em;
+        height: 20em;
+        background-color: #fff;
+    }
+}
+
+.mobile-ver {
+    display: none;
+}
+
+.pc-ver {
+    display: block;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.pc-nav {
+    display: block;
+}
+
+@media screen and (max-width:1025px) {
+    .mobile-nav {
+        display: block;
+    }
+
+    .pc-nav {
+        display: none;
+    }
+}
+
+/*-----------スマホ画面の時のcssデザイン----------*/
+@media screen and (max-width:768px) {
+    .mobile-ver {
+        display: block;
+    }
+
+    .pc-ver {
+        display: none;
+    }
+
+    .logo-font {
+        font-size: 1em;
+    }
+
+    .header-space {
+        padding-top: 50px;
+    }
+
+    .width-90 {
+        width: 90%;
+    }
+
+    .width-aboutus {
+        width: 90%;
+    }
+
+    .intro_schedule {
+        background-color: #fff;
+        width: 100%;
+    }
+
+    .area-padding {
+        padding: 1em;
+        height: 100px;
+    }
+
+    .area-title {
+        font-size: 1em;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .area-qa {
+        padding: 1em;
+        height: auto;
+        background-color: #fff;
+    }
+
+    .width-access {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
